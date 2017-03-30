@@ -1,12 +1,321 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="utf-8" />
 		<title></title>
-		<style type="text/css">
-		
+		<link rel="stylesheet" href="css/style.css" />
+		<script type="text/javascript">
+			window.onload = function() {
+				var username = document.getElementById("text2");
+				username.onclick = function() {
+					if(username.value == "请输入搜索关键字") {
+						username.value = "";
+						this.focus();
+					}
+				}
+				username.onblur = function() {
+					if(username.value == "") {
+						username.value = "请输入搜索关键字";
+					}
+				}
+			}
+		</script>
 	</head>
+
 	<body>
-		<div class="box"></div>
+		<div id="header">
+			<div class="header-nav">
+				<p class="city">
+					今天是：
+					<a href="#" style=" padding-right: 7px;">2017年2月14日</a>
+					<a href="#">星期六</a>
+				</p>
+				<p class="link">
+					<a href="#">设为首页</a>|
+					<a href="#">加入收藏</a>|
+					<a href="#">免责声明</a>|
+					<a href="#">关于我们</a>
+				</p>
+			</div>
+		</div>
+		<div id="search">
+			<div class="search-1">
+				<div class="img"><img src="img/07.png" alt="" /></div>
+				<div class="text">
+					<h2>深圳市社区管理网络办公室</h2>
+					<p>Shen zhen Community Grid Managemt Office</p>
+				</div>
+			</div>
+			<h1><!--<img src="img/04.png" alt=""/>--></h1>
+			<div class="search-nav">
+				<ul class="search-nav-1">
+					<li>
+						<a href="#">所有分类</a>
+						<ul>
+							<li>
+								<a href="#">分类一</a>
+							</li>
+							<li>
+								<a href="#">分类二</a>
+							</li>
+							<li>
+								<a href="#">分类三</a>
+							</li>
+							<li>
+								<a href="#">分类四</a>
+							</li>
+							<li>
+								<a href="#">分类五</a>
+							</li>
+
+						</ul>
+					</li>
+				</ul>
+				<input class="text2" type="text" id="text2" value="请输入搜索关键字" />
+				<input class="btn" type="submit" value="搜索" />
+			</div>
+		</div>
+		<div id="nav">
+			<ul>
+				<li>
+					<a href="#" class="nav-1">首 页</a>
+				</li>
+				<li>
+					<a href="#" class="nav-2">信息公开</a>
+				</li>
+				<li>
+					<a href="#">在线办事</a>
+				</li>
+				<li>
+					<a href="#">便民服务</a>
+				</li>
+				<li>
+					<a href="#">相互交流</a>
+				</li>
+				<li>
+					<a href="#">相关链接</a>
+				</li>
+			</ul>
+		</div>
+		<div id="main">
+			<div class="main-1">
+				<p>信息公开</p>
+				<span>公开政务工作，掌握时事政策</span>
+			</div>
+		</div>
+		<div id="bar">
+			您正在浏览：
+			<a href="">首页</a>>
+			<a href="">信息公开</a>>
+			<a href="" class="bar-1">新闻动态</a>
+		</div>
+		<div id="wap">
+
+			<div id="con">
+				<ul class="con-1">
+					<li>
+						<a href="#">政策解读</a>
+					</li>
+					<li>
+						<a href="#">社会公示</a>
+					</li>
+					<li>
+						<a href="#">通知通告</a>
+					</li>
+					<li>
+						<a href="#">新闻动态</a>
+					</li>
+				</ul>
+				<ul class="con-2">
+					<li>
+						<div class="img"><img src="img/01.png" /></div>
+						<div class="text">
+							<h2>创新民宿管理 建设美丽大鹏</h2>
+							<p>
+								大鹏新区自成立始，即提出建设国际滨海旅游度假区和建设“美丽大鹏”的发展目标；随着旅游住宿市场需求日益增加体系.....
+							</p>
+							<a href="#">详情>></a>
+							<p>深圳市社区网路管理办公室<span>2016-3-24</span></p>
+						</div>
+					</li>
+					<li>
+						<div class="img"><img src="img/02.png" /></div>
+						<div class="text">
+							<h2>福城多措并举做好冬季消防宣传工作</h2>
+							<p>
+								大鹏新区自成立始，即提出建设国际滨海旅游度假区和建设“美丽大鹏”的发展目标；随着旅游住宿市场需求日益增加体系.....
+							</p>
+							<a href="#">详情>></a>
+							<p>深圳市社区网路管理办公室<span>2016-3-24</span></p>
+						</div>
+					</li>
+					<li>
+						<div class="img"><img src="img/03.png" /></div>
+						<div class="text">
+							<h2>乌鲁木齐市政委法委领导来我市考察</h2>
+							<p>
+								大鹏新区自成立始，即提出建设国际滨海旅游度假区和建设“美丽大鹏”的发展目标；随着旅游住宿市场需求日益增加体系.....
+							</p>
+							<a href="#">详情>></a>
+							<p>深圳市社区网路管理办公室<span>2016-3-24</span></p>
+						</div>
+					</li>
+					<li>
+						<div class="img"><img src="img/01.png" /></div>
+						<div class="text">
+							<h2>创新民宿管理 建设美丽大鹏</h2>
+							<p>
+								大鹏新区自成立始，即提出建设国际滨海旅游度假区和建设“美丽大鹏”的发展目标；随着旅游住宿市场需求日益增加体系.....
+							</p>
+							<a href="#">详情>></a>
+							<p>深圳市社区网路管理办公室<span>2016-3-24</span></p>
+						</div>
+					</li>
+					<li>
+						<div class="img"><img src="img/02.png" /></div>
+						<div class="text">
+							<h2>福城多措并举做好冬季消防宣传工作</h2>
+							<p>
+								大鹏新区自成立始，即提出建设国际滨海旅游度假区和建设“美丽大鹏”的发展目标；随着旅游住宿市场需求日益增加体系.....
+							</p>
+							<a href="#">详情>></a>
+							<p>深圳市社区网路管理办公室<span>2016-3-24</span></p>
+						</div>
+					</li>
+					<li>
+						<div class="img"><img src="img/03.png" /></div>
+						<div class="text">
+							<h2>乌鲁木齐市政委法委领导来我市考察</h2>
+							<p>
+								大鹏新区自成立始，即提出建设国际滨海旅游度假区和建设“美丽大鹏”的发展目标；随着旅游住宿市场需求日益增加体系.....
+							</p>
+							<a href="#">详情>></a>
+							<p>深圳市社区网路管理办公室<span>2016-3-24</span></p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div id="con-fr">
+				<div class="con-fr1">
+					<h2>热门新闻</h2>
+					<ul>
+						<li>
+							<span class="fr1">1</span>
+							<a href="#">盐田区委副书记、政法委书记黄伟平一行.....</a>
+						</li>
+						<li>
+							<span class="fr2">2</span>
+							<a href="#">盐田区委副书记、政法委书记黄伟平一行.....</a>
+						</li>
+						<li>
+							<span class="fr3">3</span>
+							<a href="#">盐田区委副书记、政法委书记黄伟平一行.....</a>
+						</li>
+						<li>
+							<span>4</span>
+							<a href="#">盐田区委副书记、政法委书记黄伟平一行.....</a>
+						</li>
+						<li>
+							<span>5</span>
+							<a href="#">盐田区委副书记、政法委书记黄伟平一行.....</a>
+						</li>
+						<li>
+							<span>6</span>
+							<a href="#">盐田区委副书记、政法委书记黄伟平一行.....</a>
+						</li>
+						<li>
+							<span>7</span>
+							<a href="#">盐田区委副书记、政法委书记黄伟平一行.....</a>
+						</li>
+						<li>
+							<span>8</span>
+							<a href="#">盐田区委副书记、政法委书记黄伟平一行.....</a>
+						</li>
+						<li class="fr4">
+							<span>9</span>
+							<a href="#">盐田区委副书记、政法委书记黄伟平一行.....</a>
+						</li>
+					</ul>
+				</div>
+				<div class="con-fr2">
+					<h2>最新新闻</h2>
+					<ul>
+						<li>
+							<div class="img"><img src="img/01.png" /></div>
+							<div class="text">
+								<h3>创新名宿管理,建设美丽大鹏...</h3>
+								<a href="#">详情>></a>
+								<p>[2016-3-2]</p>
+							</div>
+						</li>
+						<li>
+							<div class="img"><img src="img/01.png" /></div>
+							<div class="text">
+								<h3>创新名宿管理,建设美丽大鹏...</h3>
+								<a href="#">详情>></a>
+								<p>[2016-3-2]</p>
+							</div>
+						</li>
+						<li>
+							<div class="img"><img src="img/01.png" /></div>
+							<div class="text">
+								<h3>创新名宿管理,建设美丽大鹏...</h3>
+								<a href="#">详情>></a>
+								<p>[2016-3-2]</p>
+							</div>
+						</li>
+						<li>
+							<div class="img"><img src="img/01.png" /></div>
+							<div class="text">
+								<h3>创新名宿管理,建设美丽大鹏...</h3>
+								<a href="#">详情>></a>
+								<p>[2016-3-2]</p>
+							</div>
+						</li>
+						<li>
+							<div class="img"><img src="img/01.png" /></div>
+							<div class="text">
+								<h3>创新名宿管理,建设美丽大鹏...</h3>
+								<a href="#">详情>></a>
+								<p>[2016-3-2]</p>
+							</div>
+						</li>
+						<li>
+							<div class="img"><img src="img/01.png" /></div>
+							<div class="text">
+								<h3>创新名宿管理,建设美丽大鹏...</h3>
+								<a href="#">详情>></a>
+								<p>[2016-3-2]</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+			<div id="tab">
+				<ul>
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>下一页</li>
+					<li>尾页</li>
+				</ul>
+				<span>第一页/共100页，共1234条政策</span>
+			</div>
+		</div>
+
+		<div id="footer">
+			<a href="#">首页</a> |
+			<a href="#">信息公开</a> |
+			<a href="#">在线办事</a> |
+			<a href="#">便民服务</a> |
+			<a href="#">互相交流</a> |
+			<a href="#">相关链接</a><br /> 版权所有 Copyright &copy; www.szzlb.org.cn AII 粤ICP备123456号<br /> 工商部备案管理网站 www.miitbeian.org.cn 网站投诉电话：88819988<br />
+			<img src="img/07.png" />
+		</div>
+
 	</body>
+
 </html>
